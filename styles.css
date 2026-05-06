@@ -868,3 +868,96 @@ textarea:focus {
     transform: none;
   }
 }
+
+
+/* Tally embed */
+.cta-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(360px, 1.08fr);
+  gap: 30px;
+  align-items: start;
+}
+
+.cta-copy h2 {
+  margin-bottom: 18px;
+}
+
+.privacy-callout {
+  display: grid;
+  gap: 6px;
+  margin-top: 24px;
+  padding: 16px 18px;
+  border: 1px solid rgba(253, 230, 138, 0.26);
+  border-radius: 20px;
+  color: var(--warning);
+  background: rgba(253, 230, 138, 0.065);
+  line-height: 1.55;
+}
+
+.privacy-callout strong {
+  color: #fff7cc;
+}
+
+.privacy-callout span {
+  color: rgba(253, 230, 138, 0.88);
+}
+
+.tally-panel {
+  overflow: hidden;
+  min-height: 680px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.045)),
+    rgba(5, 11, 22, 0.48);
+  box-shadow: 0 20px 70px rgba(0, 0, 0, 0.24);
+}
+
+.tally-panel iframe {
+  width: 100%;
+  min-height: 640px;
+  border: 0;
+  border-radius: 18px;
+  background: transparent;
+}
+
+.tally-panel noscript p,
+.external-form-link {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.tally-panel a,
+.external-form-link a {
+  color: var(--mint);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.external-form-link {
+  margin: 18px 0 0;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 980px) {
+  .cta-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .tally-panel {
+    min-height: 620px;
+  }
+}
+
+@media (max-width: 660px) {
+  .tally-panel {
+    padding: 8px;
+    border-radius: 22px;
+  }
+
+  .tally-panel iframe {
+    min-height: 680px;
+  }
+}

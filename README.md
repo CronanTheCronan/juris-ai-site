@@ -22,3 +22,16 @@ Open `index.html` directly in a browser.
 3. Add a privacy policy before collecting user information.
 4. Do not collect confidential case files through the public form.
 5. Deploy to Netlify, Vercel, Cloudflare Pages, GitHub Pages, or any static host.
+
+
+## Tally form
+
+The early-access form is embedded from:
+
+https://tally.so/r/oblj6O
+
+The page loads Tally's official embed script from:
+
+https://tally.so/widgets/embed.js
+
+If the iframe does not load when opening the file directly from your computer, deploy to GitHub Pages or run a local static server.
