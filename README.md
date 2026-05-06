@@ -35,3 +35,8 @@ The page loads Tally's official embed script from:
 https://tally.so/widgets/embed.js
 
 If the iframe does not load when opening the file directly from your computer, deploy to GitHub Pages or run a local static server.
+
+
+## Readability note
+
+The Tally iframe uses Tally's own internal styling because iframe content cannot be directly styled from this static site. The embed URL intentionally does not use `transparentBackground=1` so Tally renders on a readable light background inside the dark Juris-AI page.

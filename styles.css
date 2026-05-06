@@ -11,7 +11,7 @@
   --teal: #21e7d6;
   --cyan: #38bdf8;
   --mint: #a7f3d0;
-  --warning: #fde68a;
+  --notice: #a7f3d0;
   --shadow: 0 30px 100px rgba(0, 0, 0, 0.42);
   --radius-xl: 34px;
   --radius-lg: 24px;
@@ -323,7 +323,7 @@ h3 {
 
 .legal-note {
   max-width: 660px;
-  color: var(--warning);
+  color: var(--notice);
   font-size: 0.88rem;
   line-height: 1.55;
 }
@@ -889,7 +889,7 @@ textarea:focus {
   padding: 16px 18px;
   border: 1px solid rgba(253, 230, 138, 0.26);
   border-radius: 20px;
-  color: var(--warning);
+  color: var(--notice);
   background: rgba(253, 230, 138, 0.065);
   line-height: 1.55;
 }
@@ -959,5 +959,72 @@ textarea:focus {
 
   .tally-panel iframe {
     min-height: 680px;
+  }
+}
+
+
+/* Readable Tally embed and updated notice color */
+.legal-note {
+  color: rgba(167, 243, 208, 0.92);
+}
+
+.privacy-callout {
+  border: 1px solid rgba(33, 231, 214, 0.28);
+  color: rgba(167, 243, 208, 0.95);
+  background:
+    linear-gradient(135deg, rgba(33, 231, 214, 0.10), rgba(56, 189, 248, 0.065)),
+    rgba(5, 11, 22, 0.32);
+}
+
+.privacy-callout strong {
+  color: #e6fffb;
+}
+
+.privacy-callout span {
+  color: rgba(199, 250, 242, 0.9);
+}
+
+.tally-panel {
+  overflow: hidden;
+  min-height: 720px;
+  padding: 14px;
+  border: 1px solid rgba(103, 232, 249, 0.22);
+  border-radius: 28px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.08)),
+    rgba(5, 11, 22, 0.42);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+}
+
+.tally-panel iframe {
+  width: 100%;
+  min-height: 700px;
+  border: 0;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: inset 0 0 0 1px rgba(5, 11, 22, 0.08);
+}
+
+/* Hide the duplicated logo inside the CTA area if the embedded Tally form also includes the logo.
+   Remove this rule if you prefer showing both. */
+.tally-panel iframe {
+  color-scheme: light;
+}
+
+.external-form-link {
+  color: rgba(174, 187, 208, 0.94);
+}
+
+.external-form-link a {
+  color: var(--mint);
+}
+
+@media (max-width: 660px) {
+  .tally-panel {
+    min-height: 760px;
+  }
+
+  .tally-panel iframe {
+    min-height: 740px;
   }
 }
